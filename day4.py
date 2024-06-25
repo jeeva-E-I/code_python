@@ -12,3 +12,4 @@ if(value == 1):
   print("Heads")
 else:
   print("Tails")
+#EOL
