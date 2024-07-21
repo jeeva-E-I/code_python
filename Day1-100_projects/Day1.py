@@ -1,10 +1,3 @@
-print("hello world\nhello world\n")
-#String concatenation
-
-print("hello"+"world")
-print("programming "+"language")
-print("python"+" "+"program")
-
 #Day 1 project- Band name generator
 
 print("Welcome to the Band Name Generator.")
