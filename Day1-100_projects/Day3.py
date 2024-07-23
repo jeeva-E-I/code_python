@@ -54,4 +54,3 @@ elif(door == "blue"):
     print("You win the treasure hunt... You are the winner to become a world's richest man")
 else:
     print("game over")
-print("end of line")
