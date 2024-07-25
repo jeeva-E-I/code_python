@@ -32,7 +32,7 @@ computer_input = rd.randint(0,2)
 print("YOUR CHOICE")
 if user_input == 0:
   print(rock)
-elif user_input == 1:1
+elif user_input == 1:
   print(paper)
 else:
   print(scissors) 
