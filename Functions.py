@@ -1,5 +1,12 @@
+#Function example
+def wishes():
+    print("Hello everyone")
+    print("function definition")
+    print("Example")
+wishes()
+
 #nested function
-def multiply(x,y):
+def multiply(x,y):  #positional argument
     return x*y
 def apply(func,x,y):
     return func(x,y)
@@ -30,5 +37,5 @@ def power(n):
     return lambda a: a**n
 square = power(2)
 cube = power(3)
-print(square(2))
+print(square(6))
 print(cube(3))  
