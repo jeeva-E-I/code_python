@@ -9,15 +9,21 @@ nr_letters= int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 password=[]
-for i in range(1,nr_letters+1):
+
+for i in range(1,nr_letters+1):         # this for loop finds random letters in the list with the range specified by the user
     password.append(random.choice(letters))
-for i in range(1, nr_numbers+1 ):
+    
+for i in range(1, nr_numbers+1 ):       # this for loop finds random numbers in the list with the range specified by the user
     password.append(random.choice(numbers))
-for i in range(1, nr_symbols+1):
+    
+for i in range(1, nr_symbols+1):        # this for loop finds random symbols  in the list with the range specified by the user
     password.append(random.choice(symbols))
+    
+    
 total_length = len(password)
 final_password=""
-for i in range(0, total_length):
+
+for i in range(0, total_length):        # this loop converts the list of elements into a single string as a final generated password
     word = random.choice(password)
     final_password += word    
 print(final_password)
