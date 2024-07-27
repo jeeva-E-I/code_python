@@ -24,11 +24,12 @@ while "_" in display:
     if "_" not in display:
         print("YOU WON")
     else:
-        print(hangman_words.stages[lives])
+        print(hangman_arts.stages[lives])
         print("You have entered the wrong text")
         lives -= 1
         print(f"{lives} chances are left")
     if lives == 0:
+            print(hangman_arts.stages[lives])
             print("YOU LOST")
             break
         
