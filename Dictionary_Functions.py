@@ -53,3 +53,33 @@ book= {1:{"name":"python","isbn":2712,"department":"cse"},
 print(book[1])
 print(book[2])
 print(book[3]['isbn'])
+
+#Nesting a List in a Dictionary
+
+travel_log = {
+  "France": ["Paris", "Lille", "Dijon"],
+  "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+}
+
+#Nesting Dictionary in a Dictionary
+
+travel_log = {
+  "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
+  "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
+}
+
+#Nesting Dictionaries in Lists
+
+travel_log = [
+{
+  "country": "France", 
+  "cities_visited": ["Paris", "Lille", "Dijon"], 
+  "total_visits": 12,
+},
+{
+  "country": "Germany",
+  "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+  "total_visits": 5,
+},
+]
+print(travel_log[0]["cities_visited"])
