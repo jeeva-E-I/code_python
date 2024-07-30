@@ -7,9 +7,9 @@ def add_new_country(country_name,num_visits,cities_name):
     }
   travel_log.append(travel_log_dict)
 
-country = input() # Add country name
-visits = int(input()) # Number of visits
-list_of_cities = eval(input()) # create list from formatted string.... eval function converts the string expressions into particular python format
+country = input("Enter the country name") # Add country name
+visits = int(input("Enter number of times you visited the country")) # Number of visits
+list_of_cities = eval(input("Enter the cities name in list format")) # create list from formatted string.... eval function converts the string expressions into particular python format
 
 travel_log = [
   {
