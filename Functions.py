@@ -5,6 +5,14 @@ def wishes():
     print("Example")
 wishes()
 
+#function with return values
+def format_name(name):
+    if name == "":
+        return "Invalid input"
+    formated_name = name.title()
+    return f"The formated name : {formated_name}"
+print(format_name(input("Enter Your nameL: ")))
+
 #nested function
 def multiply(x,y):  #positional argument
     return x*y
