@@ -1,5 +1,6 @@
 # fibonacci using generator function
 def fibo(limit):
+    '''Print the fibonacci number of required limit'''
     a,b=0,1
     while a < limit:
         yield a

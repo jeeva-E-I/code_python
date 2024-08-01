@@ -12,11 +12,11 @@ hello()
 
 #generator function
 def gen():
+    ''' Generator function'''
     yield 1
     yield 2
     yield 3
 print(next(gen())) #To Print single value in a generator we need to use Next
-
 for a in gen():
     print(a)
     print(a," is a number")

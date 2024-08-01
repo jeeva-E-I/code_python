@@ -1,6 +1,7 @@
 #To find the number of days in the month
 
 def is_leap(year):
+  '''Return True whether the year is leap year or return False '''  #Doc Strings
   if year % 4 == 0:
     if year % 100 == 0:
       if year % 400 == 0:
