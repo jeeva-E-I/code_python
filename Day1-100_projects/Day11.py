@@ -1,3 +1,4 @@
+#BlackJack Program
 import os
 import random
 logo = """
@@ -17,6 +18,7 @@ def clear():
 def blackjack():
     print(logo)
     def card_selection():
+        '''Returns the card_value'''
         cards = [2,3,4,5,6,7,8,9,10,10,10,10,11]
         card = random.choice(cards)
         return card
@@ -25,13 +27,14 @@ def blackjack():
     is_game_over = False
 
     def calculate_score(cards):
-        if sum(cards) == 21 and len(cards) ==2:
+        if sum(cards) == 21 and len(cards) ==2: # check if user and comp have value of 21 
             return 0
-        if 11 in cards and sum(cards) > 21:
+        if 11 in cards and sum(cards) > 21: # if 11 in card value and sum of the card value is greater than 21 means change 11 as 1
             cards.remove(11)
             cards.append(1)
         return sum(cards)
     def compare_result(user_score,comp_score):
+        ''' compare user and computer score and return the result'''
         if user_score == comp_score:
             return "Draw"
         elif comp_score == 0:
@@ -48,7 +51,7 @@ def blackjack():
             return "You lose"
         
             
-    for _ in range(2):
+    for _ in range(2): # Triggering the card_selection function to get values for user and computer card
         user_card.append(card_selection())
         comp_card.append(card_selection())
     while not is_game_over:
