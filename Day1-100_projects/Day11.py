@@ -1,22 +1,14 @@
 #BlackJack Program
 import os
 import random
-logo = """
-.------.            _     _            _    _            _    
-|A_  _ |.          | |   | |          | |  (_)          | |   
-|( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
-| \  /|K /\  |     | '_ \| |/ _` |/ __| |/ / |/ _` |/ __| |/ /
-|  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   < 
-`-----| \  / |     |_.__/|_|\__,_|\___|_|\_\ |\__,_|\___|_|\_\\
-      |  \/ K|                            _/ |                
-      `------'                           |__/           
-"""
-                   
+import art
+
+print(art.logo_11)                   
 def clear():
     if os.name == 'nt':
         _ = os.system('cls')
 def blackjack():
-    print(logo)
+    print(art.logo_11)
     def card_selection():
         '''Returns the card_value'''
         cards = [2,3,4,5,6,7,8,9,10,10,10,10,11]

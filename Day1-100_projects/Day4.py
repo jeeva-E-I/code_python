@@ -1,5 +1,8 @@
 #ROCK PAPER SCISSORS PROGRAM
 import random as rd
+import art
+print(art.logo_4)
+
 rock = '''
     _______
 ---'   ____)

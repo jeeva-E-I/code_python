@@ -1,4 +1,6 @@
 # casear cipher
+import art
+print(art.logo_8)
 def encrypt(text_value ,shift_value):
     """ Encrypts the given plain text into cipher text"""
     encrypted_text =""

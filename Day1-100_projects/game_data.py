@@ -300,3 +300,6 @@ data = [
         'country': 'United States'
     }
 ]
+for i,dict in enumerate(data):
+    if "name" in dict:
+        print(dict["name"])

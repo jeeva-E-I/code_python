@@ -1,23 +1,11 @@
 #SECRET AUCTION PROGRAM
 import os
+import art
 def clear():
     if os.name == 'nt':
         _ = os.system('cls')
 
-logo = '''
-                         ___________
-                         \         /
-                          )_______(
-                          |"""""""|_.-._,.---------.,_.-._
-                          |       | | |               | | ''-.
-                          |       |_| |_             _| |_..-'
-                          |_______| '-' `'---------'` '-'
-                          )"""""""(
-                         /_________\\
-                       .-------------.
-                      /_______________\\
-'''
-print(logo)
+print(art.logo_9)
 print("Welcome to the Secret auction program")
 dict ={}
 def input_dict():

@@ -8,7 +8,7 @@ def clear():
         _ = os.system('cls')
 
 def statement():
-    print(f"{art.logo13}")
+    print(f"{art.logo_14}")
     print(f"Compare A: {user1["name"]}, a{user1["description"]}, from {user1["country"]}")
     print(art.vs)
     print(f"Against B: {user2["name"]}, a{user2["description"]}, from {user2["country"]}") 

@@ -1,5 +1,6 @@
 #Day 2 project: Tip calculator
-
+import art
+print(art.logo_2)
 print("welcome to the tip calculator!")
 print("what was the total bill?")
 bill = float(input())

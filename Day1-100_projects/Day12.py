@@ -1,12 +1,9 @@
 # Number Guessing Game
 import os
 import random
-logo = '''
-                 __   ___  __      __        ___  __   __          __     
-|\ | |  |  |\/| |__) |__  |__)    / _` |  | |__  /__` /__` | |\ | / _`    
-| \| \__/  |  | |__) |___ |  \    \__> \__/ |___ .__/ .__/ | | \| \__>    
-                                                                          
-'''
+import art
+
+print(art.logo_12)
 print("Welcome to the Number Guessing Game")
 print("I'm thinking of a Number between 1 to 100")
 comp_num= random.randint(1,100)
