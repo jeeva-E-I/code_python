@@ -1,4 +1,6 @@
+# casear cipher
 def encrypt(text_value ,shift_value):
+    """ Encrypts the given plain text into cipher text"""
     encrypted_text =""
     for i in text_value:
         index_num = alphabet.index(i)
@@ -7,6 +9,7 @@ def encrypt(text_value ,shift_value):
     return encrypted_text
 
 def decrypt(text_value,shift_value):
+    """Decrypts the given cipher text into plain text"""
     decrypted_text =""
     for i in text_value:
         index_num = alphabet.index(i)
