@@ -3,29 +3,39 @@
 name1 = ["arun","akash","charran"]
 name2 = ["akshaya","abinaya","banu","bhuva"]
 
-name1.append("denver") #append function
+#append function
+name1.append("denver") 
 print(name1)
 
-name3 = name2.copy() # copy function
+# copy function
+name3 = name2.copy()
 print(name3)
 
-print(name1.count('charran')) # Count function
+# Count function
+print(name1.count('charran')) 
 
-name1.extend(name2) #Extend function
+#Extend function
+name1.extend(name2) 
 print(name1)
 
-print(name1.index("akshaya")) #index function
+#index function
+print(name1.index("akshaya")) 
 
-print(name1.pop(5)) #pop function
+#pop function
+print(name1.pop(5)) 
 
-name1.insert(6, "chithra") # insert function
+# insert function
+name1.insert(6, "chithra") 
 print(name1)
 
-name2.remove("bhuva")#remove function
+#remove function
+name2.remove("bhuva")
 print(name2)
 
-name1.reverse() #Reverse function
+#Reverse function
+name1.reverse() 
 print(name1)
 
-name1.sort() #Sort function
+#Sort function
+name1.sort() 
 print(name1)
