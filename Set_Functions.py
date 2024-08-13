@@ -2,18 +2,32 @@
 
 cars1 ={"bmw","suzuki","tata","audi"}
 cars2 = cars1.copy()
-cars1.add("porsche") #difference add
+#difference add
+cars1.add("porsche") 
 print(cars1)
-cars1.difference_update(cars2) #difference update
+
+#difference update
+cars1.difference_update(cars2)
 print(cars1)
+
+#discard function
 cars2.discard("suzuki")
-print(cars2) #discard function
+print(cars2) 
 cars1.add("bmw")
-print(cars1.intersection(cars2)) #intersection
+
+#intersection
+print(cars1.intersection(cars2)) 
 all_cars ={"bmw","suzuki","tata","audi","porsche","nissan"}
-print(all_cars.issubset(cars2)) #issubset function
+
+#issubset function
+print(all_cars.issubset(cars2)) 
 print(cars2.issubset(all_cars))
-all_cars.pop() #pop function
+
+#pop function
+all_cars.pop() 
 print(all_cars)
-print(all_cars.symmetric_difference(cars1)) #symmetric difference function
-print(cars1.union(cars2)) #union functio
+
+#symmetric difference function
+print(all_cars.symmetric_difference(cars1)) 
+
+print(cars1.union(cars2)) #union function
