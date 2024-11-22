@@ -34,16 +34,16 @@ def calculator():
 
     for i in operations:
         print(i)
-    inp = 'y'
-    while inp == 'y': 
+    inp = 'yes'
+    while inp == 'yes': 
         symbol = input("pick an operation : ")
         num2 = float(input("Enter the Second number: "))
         calculation_symbol = operations[symbol] # to get the name of the operation to call the function Ex: if user enter '+' , calculation_symbol = add
         result = calculation_symbol(num1,num2) # function call to perform mathematical operation
         print(f"{num1} {symbol} {num2} = {result}")
         num1 = result
-        inp = input(f"Type 'Y' to continue calculating with{result}, or type 'N' to start a new calculation: ").lower()
-        if inp == 'n':
+        inp = input(f"Type 'Yes' to continue calculating with {result}, or type 'No' to start a new calculation: ").lower()
+        if inp == 'no':
             clear()
             calculator() # recurssive call
             
