@@ -1,3 +1,6 @@
+"""Given a string s consisting of lowercase Latin Letters. Return the first non-repeating character in s.
+    If there is no non-repeating character, return '$'."""
+
 def nonRepeatingChar(s):
     char_count = {}
     for i in s:
