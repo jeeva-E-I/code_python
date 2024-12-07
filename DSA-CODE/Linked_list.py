@@ -33,7 +33,7 @@ class Linkedlist:
             return
         
         current = self.head
-        while current.next:
+        while current.next: #deletinng a node at the specified element
             if current.next.data == data:
                 current.next = current.next.next
                 return
