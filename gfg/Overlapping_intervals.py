@@ -21,7 +21,6 @@ def overlapping(): #Space complexity O(1)
             index += 1
             arr[index] = arr[i]
     print(arr[:index+1])
-    # print(arr)
 
 
 # overlapping()
