@@ -19,7 +19,9 @@ def input_dict():
         input_dict() # Recurssively call the function to add another user name and bid value
     return dict
 auction_dict = input_dict() # Tigger the function call
-print(auction_dict)
+print("List of Bidders:")
+for i,j in auction_dict.items():
+    print(f"{i}   - {j}")
 value = 0
 key = ""
 

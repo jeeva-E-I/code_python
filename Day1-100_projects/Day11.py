@@ -3,7 +3,7 @@ import os
 import random
 import art
 
-print(art.logo_11)                   
+                 
 def clear():
     if os.name == 'nt':
         _ = os.system('cls')
@@ -66,9 +66,10 @@ def blackjack():
 
     print(compare_result(user_score,comp_score))
     
-restart = input("Do you want to play again: type 'yes' to continue and type 'no' to exit: ").lower()
-if restart == 'yes':
-    clear()
-    blackjack()
-else:
-    exit()
+    restart = input("Do you want to play again: type 'yes' to continue and type 'no' to exit: ").lower()
+    if restart == 'yes':
+        clear()
+        blackjack()
+    else:
+        exit()
+blackjack()
